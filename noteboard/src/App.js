@@ -1,14 +1,14 @@
 import React from 'react';
-import './App.css';
-import ListadeNotas from './components/listadenotas/ListaDeNotas'
-import { FormularioCadastro } from './components/formulario-cadastro/FormularioCadastro';
+import './assets/App.css';
+import ListadeNotas from './components/listadenotas'
+import FormularioCadastro from './components/formulario-cadastro';
 
 
 
 
 function App() {
   return (
-  <section>
+  <section className="conteudo">
         <FormularioCadastro />
         <ListadeNotas />
   </section>
