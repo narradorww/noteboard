@@ -1,14 +1,17 @@
-import React, { Component } from 'react';
-import './styled.css';
 
-export class CardNota extends Component {
-    render() {
-        return (
-            <section className="card-nota">
-            <header>Título</header>
-            <p>Escreva sua nota</p>  
-            </section>  
-
-        )
-    }
+import React, { Component } from "react";
+import "./styled.css";
+class CardNota extends Component {
+  render() {
+    return (
+      <section className="card-nota">
+        <header className="card-nota_cabecalho">
+          <h3 className="card-nota_titulo">{this.props.titulo}</h3>
+        </header>
+        <p className="card-nota_texto">{this.props.texto}</p>
+      </section>
+    );
+  }
 }
+
+export default CardNota;
